@@ -1,0 +1,17 @@
+@mixin border {
+    border: 4px solid #000000;
+    padding: 8px;
+}
+
+@mixin grid-layout($col) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    align-content: start;
+}
+
+@mixin item-box {
+    @include border;
+    height: fit-content;
+    width: 64px;
+    cursor: pointer;
+}
